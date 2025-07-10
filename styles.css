@@ -1,33 +1,98 @@
+/* === Font & Layout === */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f3e8e2, #e7e3d4);
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background 0.5s ease-in-out;
 }
 
+/* === Container === */
 .game-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fef6e4;
+    padding: 40px 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    transition: all 0.4s ease-in-out;
 }
 
-input {
-    margin: 10px 0;
-    padding: 5px;
+/* === Judul & Info === */
+h1 {
+    font-size: 30px;
+    color: #3e3e3e;
+    margin-bottom: 10px;
 }
 
+#instruction, #attempt {
+    font-size: 15px;
+    color: #6e6e6e;
+    margin: 8px 0 16px 0;
+}
+
+/* === Input === */
+input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #c68e4f;
+}
+
+/* === Buttons === */
 button {
-    margin: 10px 0;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 12px;
     cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
+button:active {
+    transform: scale(0.98);
+}
+
+#guessButton {
+    background-color: #c68e4f;
+    color: white;
+}
+
+#guessButton:hover {
+    background-color: #a9743c;
+}
+
+#playAgain {
+    background-color: #e5e5e5;
+    color: #2e2e2e;
+}
+
+#playAgain:hover {
+    background-color: #d1d1d1;
+}
+
+/* === Feedback === */
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4a4a4a;
+    transition: all 0.4s ease-in-out;
 }

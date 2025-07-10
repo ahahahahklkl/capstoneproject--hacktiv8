@@ -17,7 +17,7 @@ function checkGuess() {
     const guess = parseInt(numberInput.value);
 
     if (isNaN(guess) || guess < 1 || guess > 100) {
-        feedbackDisplay.textContent = "Masukkan angka antara 1 sampai 100.";
+        feedbackDisplay.textContent = "⚠️ Masukkan angka antara 1 sampai 100.";
         return;
     }
 
@@ -25,18 +25,18 @@ function checkGuess() {
     attemptsLeftDisplay.textContent = attemptsLeft;
 
     if (guess < randomNumber) {
-        feedbackDisplay.textContent = "Angka yang kamu tebakan terlalu kecil.";
+        feedbackDisplay.textContent = "⬇️ Angka terlalu kecil.";
     } else if (guess > randomNumber) {
-        feedbackDisplay.textContent = "Angka yang kamu tebakan terlalu besar.";
+        feedbackDisplay.textContent = "⬆️ Angka terlalu besar.";
     } else {
-        feedbackDisplay.textContent = "Selamat, kamu menang!";
+        feedbackDisplay.textContent = "🎉 Selamat, kamu menang!";
         changeBackgroundToGreen();
         endGame();
         return;
     }
 
     if (attemptsLeft <= 0) {
-        feedbackDisplay.textContent = `Kamu kalah! Angka yang benar adalah ${randomNumber}.`;
+        feedbackDisplay.textContent = `💀 Kamu kalah! Jawabannya: ${randomNumber}.`;
         endGame();
     }
 }
@@ -47,7 +47,8 @@ function resetGame() {
     numberInput.value = '';
     feedbackDisplay.textContent = '';
     attemptsLeftDisplay.textContent = attemptsLeft;
-    gameContainer.style.backgroundColor = '';
+    gameContainer.style.backgroundColor = '#fef6e4';
+    gameContainer.style.boxShadow = '0 10px 40px rgba(0, 0, 0, 0.06)';
     numberInput.disabled = false;
     guessButton.disabled = false;
     playAgainButton.disabled = true;
@@ -60,5 +61,6 @@ function endGame() {
 }
 
 function changeBackgroundToGreen() {
-    gameContainer.style.backgroundColor = 'lightgreen';
+    gameContainer.style.backgroundColor = '#d1e7dd';
+    gameContainer.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.1)';
 }
