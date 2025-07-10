@@ -33,9 +33,10 @@ Hasil dari IBM Granite langsung digunakan sebagai dasar dalam proyek ini.
 
 ## 📸 Tampilan
 Berikut tampilan aplikasi nya
-<img width="1919" height="1008" alt="Screenshot 2025-07-10 231408" src="https://github.com/user-attachments/assets/c6a9b3c6-4290-4b97-be57-36c099d8a6e3" />
+<img width="1919" height="1005" alt="Screenshot 2025-07-10 235714" src="https://github.com/user-attachments/assets/7422c560-783f-4959-b9a0-5678a476c2cd" />
 
 Berikut tampilan aplikasi bila berhasil menebak angka dengan tepat
-<img width="1919" height="1009" alt="Screenshot 2025-07-10 231356" src="https://github.com/user-attachments/assets/9016df6a-82ca-4072-ae61-0e74497d06fb" />
+<img width="1916" height="1010" alt="Screenshot 2025-07-10 235659" src="https://github.com/user-attachments/assets/9518abbf-e134-451c-a59b-4c91a7fe7200" />
+
 
 
